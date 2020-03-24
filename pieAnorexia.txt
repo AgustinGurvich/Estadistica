@@ -1,0 +1,33 @@
+anorexia <- read.delim("~/Estadistica/anorexia.data")
+>   View(anorexia)
+> attach(anorexia)
+> table(Signo)
+Signo
+ 0  1  2  3 
+10 19 17 13 
+> etiquetas = c("Dieta severa", "Hiperactividad", "Uso de laxantes", "Uso de ropa holgada")
+> tabla = table(Signo)
+> porcentajes = tabla*100 / length(Signo) 
+> porcentajes = round(porcentajes, digits = 2)
+> porcentajes
+Signo
+    0     1     2     3 
+16.95 32.20 28.81 22.03 
+> etiquetas = paste(etiquetas, "%")
+> etiquetas = c("Dieta severa", "Hiperactividad", "Uso de laxantes", "Uso de ropa holgada")
+> porcentajes = paste(porcentajes, "%")
+> porcentajes
+[1] "16.95 %" "32.2 %"  "28.81 %"
+[4] "22.03 %"
+> etiquetas
+[1] "Dieta severa"       
+[2] "Hiperactividad"     
+[3] "Uso de laxantes"    
+[4] "Uso de ropa holgada"
+> etiquetas = paste(etiquetas, porcentajes)
+> porcentajes
+[1] "16.95 %" "32.2 %"  "28.81 %"
+[4] "22.03 %"
+> color = c("blue", "cyan", "red","yellow")
+torta = pie(tabla, labels = etiquetas, clockwise = TRUE, main = "PRINCIPAL SIGNO VISIBLE EN PACIENTES CON ANOREXIA\nARGENTINA, OCTUBRE 2012", cex = 0.7, col = color)
+> mtext("Fuente: Asociación de Lucha contra la Bulimia y la Anorexia.", side = 1, adj = 0, line = 3, cex = 0.7)
