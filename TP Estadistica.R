@@ -41,7 +41,9 @@ df$FrecuenciaRelativaAcumulada = cumsum(FrecuenciaRelativa)
 df = df %>% rename(Frecuencia = Freq)
 
 
-centrar = theme(plot.title = element_text(hjust = 0.5))
+centrar = theme(plot.title = element_text(hjust = 0.5, size = 15, face = "bold"))
+a45 = theme(axis.text.x = element_text(angle = 45, hjust =1))
+colorDeSanti = rgb(red = 31,green = 181,blue = 234,maxColorValue = 255)
 #Amplitud de intervalos = (max-min)/cantidad
 #Cantidad de intervalos = piso(raiz(length))
 
@@ -53,7 +55,7 @@ centrar = theme(plot.title = element_text(hjust = 0.5))
 #Desviacion estandar = 7.056293
 #Histograma + Poligono de frecuencia
 base = ggplot(base4, aes(altura)) 
-base + geom_histogram(binwidth = 3,boundary = 1,col = "black", fill = "skyblue", closed = "left") + scale_x_continuous(breaks = seq(1,40,3))+ scale_y_continuous(breaks = seq(0,70,10)) + ggtitle("Altura de los árboles en el centro de Buenos Aires\nAño 2011") + labs(y = "Cantidad de árboles", x = "Altura en metros") +  centrar 
+base + geom_histogram(binwidth = 3,boundary = 1,col = "black", fill = colorDeSanti, closed = "left") + scale_x_continuous(breaks = seq(1,40,3))+ scale_y_continuous(breaks = seq(0,70,10)) + ggtitle("Distribución de la cantidad de árboles con respecto a sus alturas \n Buenos Aires, año 2011") + labs(y = "Cantidad de árboles", x = "Altura en metros") +  centrar 
 #Dijo Gabina que mejor hacer la tabla de frecuencias
 tabla_altura = Hist_tabla(base4$altura,1,40,3)
 
@@ -63,12 +65,12 @@ tabla_altura = Hist_tabla(base4$altura,1,40,3)
 #Graficos del diametro
 #Media = 38.78571
 #Mediana = 32
-#Moda = 14-28
+#Moda = 30-45
 #Variancia = 899.9912
 #Desviacion estandar = 29.99985
 #Histograma 
 base = ggplot(base4, aes(diametro)) 
-base + geom_histogram(col = "black", fill = "skyblue", boundary = 0, breaks = c(0,15,30,45,60,75,90,105,120,165,210,260), closed = "left") + scale_x_continuous(breaks = seq(0,260,15))+ scale_y_continuous(breaks = seq(0,110,10)) + ggtitle("Diámetro de los árboles en el centro de Buenos Aires\nAño 2011") + labs(y = "Cantidad", x = "Diámetro") +  centrar 
+base + geom_histogram(col = "black", fill = colorDeSanti, boundary = 0, breaks = c(0,15,30,45,60,75,90,105,120,165,210,260), closed = "left") + scale_x_continuous(breaks = seq(0,260,15))+ scale_y_continuous(breaks = seq(0,110,10)) + ggtitle("Distribución de la cantidad de árboles con respecto a sus diámetros \n Buenos Aires, año 2011") + labs(y = "Cantidad de árboles", x = "Diámetro en centímetros") +  centrar 
 #Dijo Gabina que mejor hacer la tabla de frecuencias
 # tabla_altura = Hist_tabla(base4$diametro,2,285,15)
 # Hacerla a manopla
@@ -85,7 +87,7 @@ base + geom_histogram(col = "black", fill = "skyblue", boundary = 0, breaks = c(
 #Desviacion estandar = 5.322681
 #Histograma + Poligono de frecuencia
 base = ggplot(base4, aes(inclinacion)) 
-base + geom_histogram(binwidth = 3,boundary = 0, col = "black", fill = "skyblue", breaks = c(0,3,6,9,12,15,30,45), closed = "left") + scale_x_continuous(breaks = seq(0,45,3))+ scale_y_continuous(breaks = seq(0,300,50)) + ggtitle("Inclinación de los árboles en el centro de Buenos Aires\nAño 2011") + labs(y = "Cantidad", x = "Inclinación")+ centrar +  theme(plot.title = element_text(hjust = 0.5)) 
+base + geom_histogram(boundary = 0, col = "black", fill = colorDeSanti, breaks = c(0,3,6,9,12,15,30,45), closed = "left") + scale_x_continuous(breaks = seq(0,45,3))+ scale_y_continuous(breaks = seq(0,300,30)) + ggtitle("Distribución de la cantidad de árboles con respecto a su inclinación \n Buenos Aires, año 2011") + labs(y = "Cantidad de árboles", x = "Inclinación en grados")+ centrar +  theme(plot.title = element_text(hjust = 0.5)) 
 # Dijo Gabina que mejor hacer la tabla de frecuencias
 # Hacerla a manopla
 
@@ -97,9 +99,7 @@ base + geom_histogram(binwidth = 3,boundary = 0, col = "black", fill = "skyblue"
 #Torta
 #Moda = Exotico
 df = data.frame(Origen = c("Nativo/Autóctono", "Exótico"), value = c(101,249))
-ggplot(df, aes(x="",y=value,fill=Origen)) +geom_bar(stat="identity", width=1) +coord_polar("y", start=0) + theme_void() + ggtitle("Origen de los árboles en el centro de Buenos Aires \n Año 2011") + centrar
-#Preguntar como poner los porcentajes
-
+ggplot(df, aes(x="",y=value,fill=Origen)) +geom_bar(stat="identity", width=1, colour = "black") +coord_polar("y", start=0) + theme_void() + ggtitle("Distribución del origen de los árboles\n Buenos Aires, año 2011") + centrar +  geom_text(aes(y = value/2 + c(0, cumsum(value)[-length(value)]),label = percent(value/350)), size=4)
 
 
 
@@ -108,9 +108,9 @@ ggplot(df, aes(x="",y=value,fill=Origen)) +geom_bar(stat="identity", width=1) +c
 #Graficos de especie
 #Barras
 df = data.frame(table(base4$especie))
-ggplot(df, aes(x=Var1, y = sort(Freq))) + geom_col(width = 0.2)  + labs(y = "Cantidad", x = "Especie") + ggtitle("Árboles por especie") + centrar
-
-
+ggplot(df, aes(x=Freq, y = reorder(Var1,Freq))) + geom_bar(stat = "identity", color = "black")  + labs(y = "Cantidad", x = "Especie") + ggtitle("Distribución de árboles por especie \n Buenos Aires, año 2011") + centrar
+ggplot(base4, aes(x=especie, y = "", fill = origen)) + geom_bar(colour = "black",stat = "identity")  + labs(y = "Proporción", x = "Especie") + ggtitle("Proporción de especies por origen \n Buenos Aires, año 2011") + centrar + coord_flip()
+#Preguntarle a Juanchi como hacerlo
 
 
 
@@ -123,7 +123,7 @@ ggplot(df, aes(x=Var1, y = sort(Freq))) + geom_col(width = 0.2)  + labs(y = "Can
 #Variancia = 1.979738
 #Desvio estandar = 1.407032
 df = data.frame(table(base4$brotes))
-ggplot(df, aes(Var1,sort(Freq))) +geom_segment( aes(x=Var1, xend=Var1, y=0, yend=sort(Freq)),lwd = 1, color ="black" ) + geom_point(size = 2, color = "black", shape = 19)+ scale_y_continuous(breaks = seq(0,110,10)) + labs(x ="Cantidad de brotes", y = "Cantidad de árboles") + ggtitle("Cantidad de brotes por árbol en el centro de Buenos Aires \n Año 2011") + centrar 
+ggplot(df, aes(Var1,sort(Freq))) +geom_col(width = 0.2, fill = colorDeSanti, colour = "Black", size=1)+scale_y_continuous(breaks = seq(0,110,10)) + labs(x ="Cantidad de brotes", y = "Cantidad de árboles") + ggtitle("Cantidad de árboles por número de brotes \n Buenos Aires, año 2011") + centrar 
 
 
 
@@ -131,39 +131,34 @@ ggplot(df, aes(Var1,sort(Freq))) +geom_segment( aes(x=Var1, xend=Var1, y=0, yend
 
 #Arbol mas torcido
 #Es el eucalipto
-ggplot(base4,aes(inclinacion,especie)) + geom_boxplot(fill="skyblue", alpha=1, outlier.shape = "cross", outlier.size = 3, outlier.color = "Black")
+ggplot(base4,aes(inclinacion,especie)) + geom_boxplot(fill=colorDeSanti, alpha=1, outlier.shape = "cross", outlier.size = 3, outlier.color = "Black") + labs(x = "Inclinación  en grados", y = "Especie") + ggtitle("Inclinación de árboles según su especie \n Buenos Aires, año 2011") + centrar
 
 
 
 
 
 #Arbol mas alto
-ggplot(base4,aes(altura,especie)) + geom_boxplot(fill="skyblue", alpha=1, outlier.shape = "cross", outlier.size = 3, outlier.color = "Black")
+ggplot(base4,aes(altura,especie)) + geom_boxplot(fill=colorDeSanti, alpha=1, outlier.shape = "cross", outlier.size = 3, outlier.color = "Black") + labs(x = "Altura en metros", y = "Especie") + ggtitle("Altura de los árboles según su especie \n Buenos Aires, año 2011")  + centrar + scale_x_continuous(breaks = seq(0,40,5))
 
 
 
 
 #Brotes por especie
 brot <- base4 %>% group_by(especie) %>% summarise(cantBrotes = sum(brotes))
-ggplot(brot,aes(especie,sort(cantBrotes))) + geom_point(size = 1)+geom_segment( aes(x=especie, xend=especie, y=0, yend=sort(cantBrotes))) + scale_y_continuous(breaks = seq(0,250,15)) + labs(x ="Cantidad de brotes", y = "Cantidad de árboles") + ggtitle("Cantidad de brotes por árbol en el centro de Buenos Aires \n Año 2011") + centrar
+ggplot(brot,aes(especie,sort(cantBrotes))) + geom_point(size = 2)+geom_segment( aes(x=especie, xend=especie, y=0, yend=sort(cantBrotes))) + scale_y_continuous(breaks = seq(0,250,15)) + labs(x ="Especie", y = "Cantidad de brotes") + ggtitle("Cantidad de brotes por especie\n Buenos Aires, año 2011") + centrar + coord_flip()
 #Brotes según nativo/exótico
 brot <- base4 %>% group_by(origen) %>% summarise(cantBrotes = sum(brotes))
-ggplot(brot, aes(x="",y=cantBrotes,fill=origen)) +geom_bar(stat="identity", width=1) +coord_polar("y", start=0) + theme_void()
-
+ggplot(brot, aes(x="",y=cantBrotes,fill=origen)) +geom_bar(stat="identity", width=1,colour = "black") +coord_polar("y", start=0) + theme_void() + geom_text(aes(y = cantBrotes/2 + c(0, cumsum(cantBrotes)[-length(cantBrotes)]),label = percent(cantBrotes/1265)), size=5) + ggtitle("Distribución de brotes según el origen del árbol \n Buenos Aires, año 2011") + centrar
+#Averiguar como cambiar de lugar las etiquetas
 
 #Cantidad por especie
 cantEspecie <- data.frame(table(base4$especie))
-ggplot(cantEspecie,aes(reorder(Var1,Freq),Freq)) + geom_col( width = 0.2) + scale_y_continuous(breaks = seq(0,80,5))
+ggplot(cantEspecie,aes(reorder(Var1,Freq),Freq)) + geom_bar(stat = "identity", fill = colorDeSanti, colour = "Black") + scale_y_continuous(breaks = seq(0,80,10)) + labs(x = "Especie", y = "Cantidad de árboles") + ggtitle("Cantidad de árboles por especie \n Buenos Aires, año 2011") + centrar + coord_flip()
 
 #Alto diametro
-#df <- data.frame(table(base4$altura,base4$diametro))
-ggplot(base4, aes(x=altura, y=diametro)) + 
-  geom_point(size=3) + geom_smooth(method = 'lm',)
-
-ggplot(base4, aes(x=altura, y=inclinacion)) + 
-  geom_point(size=3) + geom_smooth(method = 'lm',)
+ggplot(base4, aes(x=altura, y=diametro)) + geom_point(size=3,shape = 21 ,fill = colorDeSanti) + geom_smooth(method = 'lm',colour = "Black") + labs(x = "Altura en metros", y = "Diámetro en centímetros") + ggtitle("Relación entre la altura de los árboles y su diámetro \n Buenos Aires, año 2011") + centrar + scale_x_continuous(breaks = seq(0,40,5)) + ylim(0,300)
+ggplot(base4, aes(x=altura, y=inclinacion)) + geom_point(size=3,shape = 21 ,fill = colorDeSanti) + geom_smooth(method = 'lm',colour = "Black") + labs(x="Altura en metros", y = "Inclinación en grados") + ggtitle("Relación entre la altura de los árboles y su inclinación \n Buenos Aires, año 2011") + centrar+ scale_x_continuous(breaks = seq(0,40,5)) + ylim(0,50)
 
 
 
-  
   
