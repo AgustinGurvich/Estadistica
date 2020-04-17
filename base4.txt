@@ -1,0 +1,351 @@
+ID	altura	diametro	inclinación	especie	origen	brotes
+246	6	30	0	Ceibo	Nativo/Autóctono	4
+405	16	50	0	Eucalipto	Exótico	2
+455	22	34	0	Eucalipto	Exótico	4
+567	22	34	0	Eucalipto	Exótico	2
+589	22	34	0	Eucalipto	Exótico	4
+676	22	34	0	Eucalipto	Exótico	4
+847	22	34	0	Eucalipto	Exótico	3
+858	22	34	0	Eucalipto	Exótico	4
+871	22	34	0	Eucalipto	Exótico	4
+926	21	32	0	Eucalipto	Exótico	3
+961	21	32	0	Eucalipto	Exótico	5
+1026	21	32	0	Eucalipto	Exótico	4
+1033	21	32	0	Eucalipto	Exótico	3
+1040	21	32	0	Eucalipto	Exótico	3
+1486	7	7	0	Álamo	Exótico	3
+1678	8	75	6	Eucalipto	Exótico	2
+1797	30	174	15	Eucalipto	Exótico	5
+1826	39	120	9	Eucalipto	Exótico	2
+1908	25	105	10	Eucalipto	Exótico	4
+2136	20	50	0	Eucalipto	Exótico	5
+2482	35	150	0	Eucalipto	Exótico	3
+2658	11	52	10	Palo borracho	Nativo/Autóctono	7
+2677	26	90	14	Eucalipto	Exótico	4
+2963	13	88	0	Palo borracho	Nativo/Autóctono	4
+2988	20	70	0	Casuarina	Exótico	5
+3048	15	20	0	Acacia	Exótico	4
+3551	21	56	7	Jacarandá	Nativo/Autóctono	6
+3668	19	82	0	Jacarandá	Nativo/Autóctono	6
+3751	15	50	15	Jacarandá	Nativo/Autóctono	5
+3787	4	12	10	Ficus	Exótico	1
+3907	9	27	15	Jacarandá	Nativo/Autóctono	4
+4405	7	25	5	Palo borracho	Nativo/Autóctono	3
+4514	11	24	0	Eucalipto	Exótico	2
+5056	14	28	0	Jacarandá	Nativo/Autóctono	4
+5067	15	42	0	Palo borracho	Nativo/Autóctono	5
+5146	5	12	0	Fresno	Exótico	4
+5147	7	12	0	Fresno	Exótico	4
+5972	11	32	6	Jacarandá	Nativo/Autóctono	5
+6082	3	2	0	Jacarandá	Nativo/Autóctono	6
+6319	3	5	0	Acacia	Exótico	4
+6474	25	46	0	Eucalipto	Exótico	4
+6516	15	33	0	Palo borracho	Nativo/Autóctono	6
+6733	13	57	6	Jacarandá	Nativo/Autóctono	3
+6989	17	22	0	Álamo	Exótico	4
+6993	17	25	6	Álamo	Exótico	4
+7032	10	22	0	Fresno	Exótico	3
+7207	3	3	25	Jacarandá	Nativo/Autóctono	6
+7335	8	15	0	Eucalipto	Exótico	3
+7347	15	53	22	Casuarina	Exótico	3
+7369	16	42	0	Palo borracho	Nativo/Autóctono	6
+7580	17	54	5	Palo borracho	Nativo/Autóctono	6
+7719	9	55	4	Palo borracho	Nativo/Autóctono	5
+7931	14	54	0	Palo borracho	Nativo/Autóctono	4
+8099	7	21	0	Jacarandá	Nativo/Autóctono	7
+8247	14	62	0	Jacarandá	Nativo/Autóctono	4
+8269	14	36	0	Acacia	Exótico	3
+8273	10	26	0	Palo borracho	Nativo/Autóctono	3
+8373	12	48	0	Fresno	Exótico	3
+8965	19	13	0	Eucalipto	Exótico	3
+9009	6	12	9	Fresno	Exótico	4
+9196	30	170	0	Eucalipto	Exótico	4
+9298	8	22	0	Palo borracho	Nativo/Autóctono	4
+9317	5	8	0	Acacia	Exótico	2
+9320	13	21	15	Jacarandá	Nativo/Autóctono	5
+9426	12	26	20	Jacarandá	Nativo/Autóctono	8
+9512	6	28	15	Palo borracho	Nativo/Autóctono	2
+9713	15	10	10	Fresno	Exótico	4
+9858	3	3	7	Álamo	Exótico	4
+9976	24	110	0	Eucalipto	Exótico	3
+10165	19	37	0	Palo borracho	Nativo/Autóctono	5
+10242	8	20	0	Fresno	Exótico	2
+10263	14	18	0	Álamo	Exótico	4
+10478	12	24	0	Álamo	Exótico	3
+10497	18	15	0	Álamo	Exótico	4
+10535	16	30	0	Álamo	Exótico	4
+10947	25	30	0	Álamo	Exótico	3
+11029	21	40	0	Casuarina	Exótico	1
+11065	21	55	0	Fresno	Exótico	4
+11168	16	17	0	Palo borracho	Nativo/Autóctono	6
+11176	12	34	6	Eucalipto	Exótico	4
+11418	14	51	0	Casuarina	Exótico	4
+11427	12	32	1	Casuarina	Exótico	2
+11430	20	34	2	Casuarina	Exótico	3
+11594	12	53	24	Jacarandá	Nativo/Autóctono	7
+11697	5	2	0	Álamo	Exótico	3
+12016	2	25	0	Ceibo	Nativo/Autóctono	6
+12028	13	30	0	Fresno	Exótico	4
+12054	4	6	15	Jacarandá	Nativo/Autóctono	6
+12353	19	30	0	Álamo	Exótico	2
+12384	11	28	0	Casuarina	Exótico	2
+12452	12	8	0	Casuarina	Exótico	4
+12504	12	9	0	Casuarina	Exótico	4
+12532	18	21	0	Casuarina	Exótico	2
+12598	13	20	0	Casuarina	Exótico	2
+12775	20	50	0	Casuarina	Exótico	3
+12822	16	40	10	Jacarandá	Nativo/Autóctono	3
+12926	20	45	5	Álamo	Exótico	1
+13072	20	48	0	Álamo	Exótico	2
+13322	4	8	0	Fresno	Exótico	4
+13488	6	5	0	Álamo	Exótico	3
+13572	14	32	0	Álamo	Exótico	3
+13655	5	20	0	Palo borracho	Nativo/Autóctono	4
+13709	22	50	0	Eucalipto	Exótico	4
+13710	22	50	0	Eucalipto	Exótico	5
+13729	22	50	0	Eucalipto	Exótico	3
+13731	17	70	0	Eucalipto	Exótico	2
+13780	15	25	10	Eucalipto	Exótico	4
+13855	10	35	8	Eucalipto	Exótico	3
+13888	7	12	0	Álamo	Exótico	4
+13967	5	6	0	Álamo	Exótico	3
+14027	15	32	0	Álamo	Exótico	1
+14269	22	71	15	Eucalipto	Exótico	3
+14306	31	51	5	Eucalipto	Exótico	3
+14428	33	68	0	Eucalipto	Exótico	4
+14593	7	25	0	Palo borracho	Nativo/Autóctono	4
+14873	28	75	0	Eucalipto	Exótico	2
+14917	14	76	0	Palo borracho	Nativo/Autóctono	4
+14924	17	72	4	Palo borracho	Nativo/Autóctono	8
+15274	2	50	0	Jacarandá	Nativo/Autóctono	6
+15301	11	53	0	Palo borracho	Nativo/Autóctono	3
+15913	13	18	0	Álamo	Exótico	4
+16621	8	42	0	Palo borracho	Nativo/Autóctono	5
+17031	15	55	0	Eucalipto	Exótico	2
+17235	27	104	0	Eucalipto	Exótico	3
+17661	12	24	0	Fresno	Exótico	2
+17687	16	67	0	Casuarina	Exótico	1
+17725	2	5	0	Álamo	Exótico	4
+18257	10	3	5	Álamo	Exótico	4
+18495	1	2	0	Palo borracho	Nativo/Autóctono	4
+18552	18	22	0	Álamo	Exótico	5
+18571	7	45	12	Ceibo	Nativo/Autóctono	7
+18904	9	40	0	Palo borracho	Nativo/Autóctono	3
+18907	10	40	0	Palo borracho	Nativo/Autóctono	3
+18918	14	75	0	Casuarina	Exótico	3
+19271	18	200	12	Ficus	Exótico	3
+19767	17	55	10	Jacarandá	Nativo/Autóctono	5
+19782	20	68	8	Palo borracho	Nativo/Autóctono	5
+19959	27	140	0	Álamo	Exótico	1
+20132	23	65	0	Palo borracho	Nativo/Autóctono	5
+20630	12	41	0	Jacarandá	Nativo/Autóctono	4
+20796	5	18	6	Acacia	Exótico	3
+21465	15	35	10	Jacarandá	Nativo/Autóctono	6
+21501	21	47	0	Álamo	Exótico	2
+21540	18	29	0	Álamo	Exótico	2
+22241	10	20	7	Fresno	Exótico	5
+22425	17	50	0	Casuarina	Exótico	4
+22485	19	35	7	Álamo	Exótico	2
+22534	25	40	0	Eucalipto	Exótico	2
+22627	4	17	6	Acacia	Exótico	2
+22662	18	56	7	Eucalipto	Exótico	4
+22689	15	35	0	Álamo	Exótico	3
+22696	15	35	0	Álamo	Exótico	3
+22698	15	35	0	Álamo	Exótico	1
+22781	7	24	0	Fresno	Exótico	5
+22818	14	20	0	Álamo	Exótico	3
+22929	11	66	0	Fresno	Exótico	4
+22942	7	25	6	Jacarandá	Nativo/Autóctono	3
+23029	16	25	6	Jacarandá	Nativo/Autóctono	6
+23324	6	30	0	Ceibo	Nativo/Autóctono	6
+23367	5	6	0	Fresno	Exótico	3
+23475	20	35	4	Eucalipto	Exótico	3
+23522	7	20	0	Jacarandá	Nativo/Autóctono	6
+23577	10	27	0	Eucalipto	Exótico	4
+23714	21	68	0	Casuarina	Exótico	5
+23752	19	55	0	Casuarina	Exótico	1
+24074	16	22	0	Álamo	Exótico	3
+24392	8	19	0	Fresno	Exótico	3
+24513	4	8	0	Fresno	Exótico	3
+24591	12	15	0	Casuarina	Exótico	2
+24625	13	26	0	Casuarina	Exótico	3
+24645	17	17	0	Álamo	Exótico	4
+24683	8	20	5	Casuarina	Exótico	2
+24710	11	28	0	Casuarina	Exótico	2
+24905	18	17	5	Casuarina	Exótico	2
+24958	12	13	0	Casuarina	Exótico	3
+25074	7	16	0	Casuarina	Exótico	3
+25089	21	59	0	Casuarina	Exótico	3
+25338	10	50	0	Fresno	Exótico	3
+25464	23	37	0	Álamo	Exótico	1
+25597	2	11	0	Álamo	Exótico	4
+25641	24	60	0	Palo borracho	Nativo/Autóctono	3
+25642	24	60	0	Palo borracho	Nativo/Autóctono	6
+25648	24	60	0	Palo borracho	Nativo/Autóctono	5
+25770	3	10	0	Fresno	Exótico	3
+25901	7	30	0	Ceibo	Nativo/Autóctono	4
+26049	3	10	0	Palo borracho	Nativo/Autóctono	3
+26505	18	30	0	Álamo	Exótico	4
+26514	18	30	0	Álamo	Exótico	2
+26516	18	30	0	Álamo	Exótico	4
+26593	15	22	0	Eucalipto	Exótico	4
+26608	36	58	0	Eucalipto	Exótico	3
+26655	5	5	0	Álamo	Exótico	2
+26711	8	14	0	Álamo	Exótico	3
+26777	16	35	0	Álamo	Exótico	3
+26869	11	38	7	Ceibo	Nativo/Autóctono	2
+27119	20	60	0	Eucalipto	Exótico	5
+27126	30	80	0	Eucalipto	Exótico	2
+27173	15	65	0	Eucalipto	Exótico	3
+27496	11	22	0	Álamo	Exótico	3
+27629	32	105	12	Eucalipto	Exótico	2
+27721	10	74	0	Palo borracho	Nativo/Autóctono	5
+27778	17	28	0	Fresno	Exótico	3
+27944	18	50	10	Fresno	Exótico	3
+28107	10	30	0	Fresno	Exótico	3
+28256	16	15	0	Álamo	Exótico	4
+28466	8	15	0	Fresno	Exótico	5
+28565	16	24	0	Jacarandá	Nativo/Autóctono	6
+28956	18	70	0	Palo borracho	Nativo/Autóctono	7
+28980	16	12	12	Jacarandá	Nativo/Autóctono	6
+29450	18	80	0	Palo borracho	Nativo/Autóctono	6
+29502	1	3	0	Ficus	Exótico	1
+29703	14	40	0	Eucalipto	Exótico	2
+29744	16	79	9	Fresno	Exótico	3
+29879	11	32	0	Fresno	Exótico	3
+30287	14	42	45	Jacarandá	Nativo/Autóctono	5
+30463	11	22	10	Eucalipto	Exótico	4
+31062	11	12	0	Álamo	Exótico	2
+31536	11	36	0	Palo borracho	Nativo/Autóctono	6
+32030	18	55	0	Casuarina	Exótico	3
+32041	5	6	0	Ficus	Exótico	4
+32516	7	35	0	Ceibo	Nativo/Autóctono	2
+32764	15	17	0	Ficus	Exótico	2
+32926	15	10	0	Jacarandá	Nativo/Autóctono	3
+32934	17	40	0	Jacarandá	Nativo/Autóctono	6
+33003	20	38	5	Jacarandá	Nativo/Autóctono	6
+33065	16	51	0	Eucalipto	Exótico	3
+33396	28	260	0	Eucalipto	Exótico	4
+33437	1	5	2	Palo borracho	Nativo/Autóctono	4
+33449	10	92	0	Palo borracho	Nativo/Autóctono	7
+33791	17	24	0	Palo borracho	Nativo/Autóctono	4
+33864	3	30	0	Palo borracho	Nativo/Autóctono	4
+33979	7	42	0	Fresno	Exótico	3
+34252	9	35	0	Acacia	Exótico	4
+34313	14	30	0	Fresno	Exótico	4
+34619	8	19	7	Jacarandá	Nativo/Autóctono	6
+34732	9	24	0	Acacia	Exótico	3
+34786	20	63	0	Casuarina	Exótico	2
+34811	18	120	20	Ficus	Exótico	1
+34853	30	120	0	Eucalipto	Exótico	3
+35453	13	50	0	Casuarina	Exótico	1
+35622	30	95	6	Eucalipto	Exótico	3
+35808	13	40	0	Álamo	Exótico	4
+35912	6	20	0	Fresno	Exótico	2
+36469	7	7	0	Jacarandá	Nativo/Autóctono	5
+36570	23	48	0	Casuarina	Exótico	4
+36904	6	3	3	Álamo	Exótico	5
+36932	17	80	0	Casuarina	Exótico	4
+37343	12	22	0	Casuarina	Exótico	3
+37355	18	32	0	Casuarina	Exótico	3
+37386	6	14	0	Jacarandá	Nativo/Autóctono	4
+37546	2	3	0	Jacarandá	Nativo/Autóctono	5
+37763	9	25	0	Casuarina	Exótico	3
+37797	5	13	15	Jacarandá	Nativo/Autóctono	4
+37901	15	40	0	Álamo	Exótico	1
+38099	15	37	0	Álamo	Exótico	4
+38250	15	23	0	Álamo	Exótico	2
+38472	8	29	13	Acacia	Exótico	1
+38539	11	7	0	Álamo	Exótico	3
+38718	17	30	0	Ceibo	Nativo/Autóctono	6
+38773	5	26	0	Ceibo	Nativo/Autóctono	7
+38784	15	26	0	Ceibo	Nativo/Autóctono	5
+38801	15	26	0	Ceibo	Nativo/Autóctono	2
+38824	14	36	0	Álamo	Exótico	4
+38833	15	31	0	Álamo	Exótico	4
+39212	25	65	0	Eucalipto	Exótico	0
+39238	25	65	0	Eucalipto	Exótico	4
+39292	22	50	0	Eucalipto	Exótico	3
+39316	22	40	0	Eucalipto	Exótico	4
+39351	30	42	0	Eucalipto	Exótico	3
+39409	21	35	0	Eucalipto	Exótico	2
+39443	21	35	0	Eucalipto	Exótico	2
+39506	20	56	0	Eucalipto	Exótico	2
+39542	21	32	0	Eucalipto	Exótico	3
+39596	21	32	0	Eucalipto	Exótico	3
+39646	21	32	0	Eucalipto	Exótico	2
+39676	21	32	0	Eucalipto	Exótico	3
+39728	21	32	0	Eucalipto	Exótico	3
+39730	21	32	0	Eucalipto	Exótico	3
+39742	21	32	0	Eucalipto	Exótico	3
+40085	14	66	7	Eucalipto	Exótico	3
+40165	17	22	0	Álamo	Exótico	2
+40431	17	40	10	Eucalipto	Exótico	3
+40449	20	70	0	Eucalipto	Exótico	3
+40459	26	82	0	Eucalipto	Exótico	3
+40477	31	75	2	Eucalipto	Exótico	1
+40548	30	100	15	Eucalipto	Exótico	4
+40647	13	30	14	Eucalipto	Exótico	2
+41173	10	74	0	Palo borracho	Nativo/Autóctono	4
+41184	12	47	0	Eucalipto	Exótico	3
+41277	7	46	0	Fresno	Exótico	5
+41297	17	29	10	Álamo	Exótico	3
+41407	12	35	0	Fresno	Exótico	2
+41573	14	30	0	Fresno	Exótico	5
+41647	12	35	0	Casuarina	Exótico	4
+42037	13	24	12	Jacarandá	Nativo/Autóctono	6
+42088	15	34	7	Casuarina	Exótico	3
+42146	8	14	0	Fresno	Exótico	4
+42172	17	64	0	Palo borracho	Nativo/Autóctono	5
+42341	13	40	0	Ficus	Exótico	5
+42680	12	69	5	Casuarina	Exótico	3
+42862	12	45	0	Palo borracho	Nativo/Autóctono	4
+43040	2	8	8	Acacia	Nativo/Autóctono	4
+43520	11	28	20	Álamo	Exótico	3
+43739	13	15	16	Jacarandá	Nativo/Autóctono	5
+43754	16	53	0	Jacarandá	Nativo/Autóctono	6
+43833	5	10	0	Fresno	Exótico	3
+43836	5	14	0	Fresno	Exótico	2
+44165	6	20	0	Fresno	Exótico	4
+44204	17	14	0	Acacia	Nativo/Autóctono	5
+44396	8	40	0	Palo borracho	Nativo/Autóctono	5
+44398	6	15	0	Jacarandá	Nativo/Autóctono	5
+44462	17	23	0	Álamo	Exótico	2
+46076	13	32	4	Palo borracho	Nativo/Autóctono	5
+46245	17	60	0	Casuarina	Exótico	3
+46519	10	20	0	Álamo	Exótico	5
+46597	18	66	0	Jacarandá	Nativo/Autóctono	5
+46860	4	7	15	Acacia	Exótico	2
+47005	16	24	0	Jacarandá	Nativo/Autóctono	6
+47066	3	15	0	Ficus	Exótico	3
+47349	13	27	7	Álamo	Exótico	3
+47772	4	8	14	Acacia	Exótico	3
+47847	20	38	0	Álamo	Exótico	5
+47879	15	10	4	Jacarandá	Nativo/Autóctono	5
+48028	18	36	0	Ficus	Exótico	5
+48278	19	28	12	Fresno	Exótico	3
+48294	11	51	0	Palo borracho	Nativo/Autóctono	4
+48315	10	40	10	Jacarandá	Nativo/Autóctono	4
+48340	6	29	0	Álamo	Exótico	3
+48767	9	34	9	Palo borracho	Nativo/Autóctono	6
+48918	10	29	0	Álamo	Exótico	3
+48920	10	30	0	Álamo	Exótico	2
+48948	15	32	0	Álamo	Exótico	3
+49098	16	35	0	Álamo	Exótico	0
+49389	16	40	0	Fresno	Exótico	3
+49514	25	32	0	Álamo	Exótico	3
+49617	7	21	5	Jacarandá	Nativo/Autóctono	4
+49698	23	62	3	Casuarina	Exótico	4
+49787	21	65	0	Casuarina	Exótico	2
+50252	21	65	0	Álamo	Exótico	4
+50342	4	6	0	Álamo	Exótico	3
+50348	21	50	0	Álamo	Exótico	2
+50883	18	35	0	Álamo	Exótico	4
+50924	12	15	0	Casuarina	Exótico	3
+51005	11	23	4	Casuarina	Exótico	4
+51140	11	20	0	Casuarina	Exótico	3
+51148	13	20	0	Casuarina	Exótico	3
+51170	2	4	0	Jacarandá	Nativo/Autóctono	6
+51291	15	30	0	Casuarina	Exótico	4
+51525	16	19	0	Álamo	Exótico	6
+51534	11	32	0	Álamo	Exótico	3
