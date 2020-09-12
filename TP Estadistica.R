@@ -78,7 +78,7 @@ abline(h = seq(0, 1, 0.2), lty = 3)
 #Desviacion estandar = 29.99985
 #Histograma 
 base = ggplot(base4, aes(diametro)) 
-base + geom_histogram(col = "black", fill = colorDeSanti, boundary = 0, breaks = c(0,15,30,45,60,75,90,105,120,165,210,261), closed = "left") + scale_x_continuous(breaks = seq(0,260,15))+ scale_y_continuous(breaks = seq(0,110,10)) + labs(y = "Frecuencia absoluta", x = "Diámetro en centímetros") +  centrar 
+base + geom_histogram(aes(y = ..density..), col = "black", fill = colorDeSanti, boundary = 0, breaks = c(0,15,30,45,60,75,90,105,120,165,210,261), closed = "left") + scale_x_continuous(breaks = seq(0,260,15)) + labs(y = "Densidad", x = "Diámetro en centímetros") +  centrar 
 intervalos = c(0,15,30,45,60,75,90,105,120,165,210,261)
 freqAbs = table(cut(base4$diametro,intervalos,right = FALSE))
 freqRel = freqAbs/length(base4$diametro)
@@ -100,10 +100,10 @@ abline(h = seq(0, 1, 0.2), lty = 3)
 #Variancia = 28.33094
 #Desviacion estandar = 5.322681
 #Histograma + Poligono de frecuencia
-base = ggplot(base4, aes(inclinacion)) 
-base + geom_histogram(boundary = 0, col = "black", fill = colorDeSanti, breaks = c(0,3,6,9,12,15,30,46), closed = "left") + scale_x_continuous(breaks = seq(0,45,3))+ scale_y_continuous(breaks = seq(0,300,30))+ labs(y = "Frecuencia absoluta", x = "Inclinación en grados")+ centrar +  theme(plot.title = element_text(hjust = 0.5)) 
+base = ggplot(base4, aes(inclinación)) 
+base + geom_histogram(aes( y=..density..),boundary = 0, col = "black", fill = colorDeSanti, breaks = c(0,3,6,9,12,15,30,46), closed = "left") + scale_x_continuous(breaks = seq(0,45,3)) + labs(y = "Densidad", x = "Inclinación en grados")+ centrar +  theme(plot.title = element_text(hjust = 0.5)) 
 intervalos = c(0,3,6,9,12,15,30,46)
-freqAbs = table(cut(base4$inclinacion,intervalos,right = FALSE))
+freqAbs = table(cut(base4$inclinación,intervalos,right = FALSE))
 freqRel = freqAbs/length(base4$inclinación)
 freqAbsAcum = cumsum(freqAbs)
 freqRelAcum = freqAbsAcum/length(base4$inclinación)
@@ -173,7 +173,7 @@ ggplot(base4,aes(altura,especie)) + geom_boxplot(fill=colorDeSanti, alpha=0.6, o
 
 #Brotes por especie
 brot <- base4 %>% group_by(especie) %>% summarise(cantBrotes = sum(brotes))
-ggplot(brot,aes(especie,sort(cantBrotes))) + geom_point(size = 2, shape = 21, fill = colorDeSanti)+geom_segment( aes(x=especie, xend=especie, y=0, yend=(sort(cantBrotes)-1))) + scale_y_continuous(breaks = seq(0,255,15)) + labs(x ="Especie", y = "Cantidad de brotes") + centrar + coord_flip()
+ggplot(brot,aes(reorder(especie,cantBrotes),cantBrotes)) + geom_point(size = 2, shape = 21, fill = colorDeSanti)+geom_segment( aes(x=reorder(especie,cantBrotes), xend=especie, y=0, yend=(cantBrotes-1))) + scale_y_continuous(breaks = seq(0,255,15)) + labs(x ="Especie", y = "Cantidad de brotes") + centrar + coord_flip()
 #Brotes según nativo/exótico
 brot <- base4 %>% group_by(origen) %>% summarise(cantBrotes = sum(brotes))
 brot <- brot %>% rename(Origen = origen)
@@ -182,19 +182,13 @@ ggplot(brot, aes(x="",y=cantBrotes,fill= Origen)) +geom_bar(stat="identity", wid
 
 #Averiguar como cambiar de lugar las etiquetas
 
-
-label = brot$Origen
-label <- label %>%  paste(c("61%","39%"))
-pie(brot$cantBrotes,label,col = c("grey",colorDeSanti))
-  
-
 #Cantidad por especie
-cantEspecie <- data.frame(table(base4$especie))
-ggplot(cantEspecie,aes(reorder(Var1,Freq),Freq)) + geom_bar(stat = "identity", fill = colorDeSanti, colour = "Black") + scale_y_continuous(breaks = seq(0,80,10)) + labs(x = "Especie", y = "Cantidad de árboles") + centrar + coord_flip()
+#cantEspecie <- data.frame(table(base4$especie))
+#ggplot(cantEspecie,aes(reorder(Var1,Freq),Freq)) + geom_bar(stat = "identity", fill = colorDeSanti, colour = "Black") + scale_y_continuous(breaks = seq(0,80,10)) + labs(x = "Especie", y = "Frecuencia absoluta") + centrar + coord_flip()
 
 #Alto diametro
-ggplot(base4, aes(x=altura, y=diametro)) + geom_point(size=3,shape = 21 ,fill = colorDeSanti) + geom_smooth(method = 'lm',colour = "Black") + labs(x = "Altura en metros", y = "Diámetro en centímetros") + centrar + scale_x_continuous(breaks = seq(0,40,5)) + ylim(0,300)
-ggplot(base4, aes(x=altura, y=inclinacion)) + geom_point(size=3,shape = 21 ,fill = colorDeSanti) + geom_smooth(method = 'lm',colour = "Black") + labs(x="Altura en metros", y = "Inclinación en grados") + centrar+ scale_x_continuous(breaks = seq(0,40,5)) + ylim(0,50)
+ggplot(base4, aes(x=altura, y=diametro)) + geom_point(size=3,shape = 21 ,fill = colorDeSanti) + labs(x = "Altura en metros", y = "Diámetro en centímetros") + centrar + scale_x_continuous(breaks = seq(0,40,5)) + ylim(0,300)
+ggplot(base4, aes(x=altura, y=inclinación)) + geom_point(size=3,shape = 21 ,fill = colorDeSanti) + labs(x="Altura en metros", y = "Inclinación en grados") + centrar+ scale_x_continuous(breaks = seq(0,40,5)) + ylim(0,50)
 
 
 
